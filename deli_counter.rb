@@ -35,3 +35,12 @@ def take_a_number(array, name)
   puts "Welcome, #{name}. You are number #{array.size} in line."
 end
 take_a_number(katz_deli, "Ada")
+
+def now_serving(array)
+  if array.empty?
+    puts "There is nobody waiting to be served!"
+  else
+    puts "Currently serving #{array[0]}."
+    array.shift
+end
+now_serving(katz_deli)
